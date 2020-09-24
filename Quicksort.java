@@ -17,13 +17,8 @@ public class Quicksort {
 		int pivot = ar[end];
 		int pI = start;
 		for(int i=start;i<end;i++) {
-			if(ar[i]<=pivot) {
-				System.out.println(i+" damkn "+pI);
-				
-				swap(ar,i,pI);
-				for(int x:ar)
-					System.out.print(x+" ");
-				System.out.println();
+			if(ar[i]<=pivot) {	
+				swap(ar,i,pI);			
 				pI++;
 			}
 		}
@@ -43,7 +38,6 @@ public class Quicksort {
 		// TODO Auto-generated method stub
 		int[] ar = {3,2,10,9,8,5,6,7,2,4};
 		qs(ar,0,9);
-		System.out.println("res");
 		for(int x:ar)
 			System.out.print(x+" ");
 	}
